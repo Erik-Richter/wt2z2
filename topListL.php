@@ -28,15 +28,10 @@ foreach ($top10 as $person){
     echo '<td><a class="inverseLink" href="detail.php?id=' .$person["id"]. '">' .$person["name"] .'</a></td>';
     echo '<td><a class="inverseLink" href="detail.php?id=' .$person["id"]. '">' .$person["surname"] .'</a></td>';
     echo '<td>' ;for ($i=0; $i<$person['golds']; $i++){
-        echo '<img src="img/gold-trophy.png">';
+        echo '<img src="img/13765.png">';
     }
     echo '</td>';
     echo '<td>' .'<a href="edit.php?id=' . $person["id"]. '">'.'Upraviť</a>'.'/'.'<a class="warn" href="delete.php?id=' . $person["id"]. '">'.'Vymazať</a>' .'</td>';
     echo '</tr>';
 }
 
-function printTrophy($value){
-    for ($i=0; $i<$value; $i++){
-        echo '<img src="img/gold-trophy.png">';
-    }
-}

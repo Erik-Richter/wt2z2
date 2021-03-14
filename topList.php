@@ -27,7 +27,7 @@
             </thead>
             <tbody>
                 <?php include ("topListL.php"); ?>
-                <td><img src="img/gold-trophy.png" </td>
+                <td><img src="img/13765.png" </td>
             </tbody>
         </table>
     </main>
