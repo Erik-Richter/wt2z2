@@ -19,8 +19,11 @@
         <?php
         echo '<p></p><a class="btn btn-outline-warning" href="edit.php?id='.$_GET['id'].'">Upraviť</a>';
         ?>
+        <?php
+        echo '<p></p><a class="btn btn-outline-danger" href="delete.php?id='.$_GET['id'].'">Vymazať</a>';
+        ?>
         <p id="pid1"></p>
-        <a class="btn btn-outline-success" href="index.php">Návrat na hlavnú stránku</a><br>
+        <a class="btn btn-success" href="index.php">Návrat na hlavnú stránku</a><br>
     </div>
 </main>
 

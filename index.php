@@ -39,11 +39,12 @@
 
         </tbody>
     </table>
+
     </div>
 
     <div id="vkladanie">
         <p></p>
-        <a class="btn btn-outline-success" href="edit.php?">Vložiť nový záznam</a>
+        <a class="btn btn-primary" href="edit.php?">Vložiť nový záznam</a>
     </div>
 
 </main>

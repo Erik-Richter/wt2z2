@@ -52,7 +52,7 @@ else if(isset($_GET['id'])){
     //var_dump($person);
 
 } else{
-    //header('Location: '."../404.html");
+    header('Location: '."../404.html");
 }
 
 
@@ -132,7 +132,7 @@ else if(isset($_GET['id'])){
             <p></p>
             <input class="btn btn-outline-warning" type="submit" value="Uložiť">
             <?php
-            echo '<p></p><a class="btn btn-outline-success" href="detail.php?id='.$_GET['id'].'">Zrušiť úpravy</a>';
+            echo '<p></p><a class="btn btn-success" href="detail.php?id='.$_GET['id'].'">Zrušiť úpravy</a>';
             ?>
         </div>
         </div>

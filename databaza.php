@@ -19,6 +19,4 @@ $rows = $stm->fetchAll(PDO::FETCH_ASSOC);
 
 foreach ($rows as $row){
     echo "<tr><td>" . '<a class="inverseLink" href="detail.php?id=' .$row["id"]. '">' .$row["name"] ."</a></td><td>" .'<a class="inverseLink" href="detail.php?id=' .$row["id"] .'">' . $row["surname"] . "</a></td><td>" . $row["year"] . "</td><td>" . $row["country"] . "</td><td>" . $row["city"] . "</td><td>" . $row["type"] . "</td><td>" . $row["discipline"] .'</td>'. '<td>'.'<a href="edit.php?id=' . $row["id"]. '">'.'Upraviť</a> </td></tr>';
-
-
 }
