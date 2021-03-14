@@ -1,0 +1,66 @@
+body{
+    background-color: #2b2b2b;
+    color: snow;
+}
+
+a{
+    text-decoration: none;
+    color: #8bc152;
+}
+
+
+.inverseLink{
+    text-decoration: none;
+    color: snow;
+}
+
+#pageHeader{
+    text-decoration: none;
+    color: snow;
+}
+
+.inverseLink:hover{
+    color: #8bc152;
+}
+
+a:hover{
+    color: white;
+}
+
+/*h1{
+    color: #a2b429;
+
+}*/
+
+th{
+    color: #b5772f;
+    /*color: snow;*/
+    min-width: 25px;
+}
+
+.center{
+    text-align: center;
+}
+
+h1{
+    list-style: none;
+    padding-left: 20px;
+    color: snow;
+    background-color: #333333;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    left: 0;
+    right: 0;
+}
+
+h2{
+    color: #b5772f;
+}
+
+legend{
+    color: #ffc66d;
+}
+
+#pid1{
+
+}
