@@ -64,3 +64,20 @@ legend{
 fieldset{
     border-right: dashed 2px #ffc66d;
 }
+
+
+.my-custom-scrollbar {
+    position: relative;
+    overflow: auto;
+    min-height: 200px;
+}
+.table-wrapper-scroll-y {
+    display: block;
+}
+
+table.sortable thead {
+
+    font-weight: bold;
+    cursor: default;
+}
+

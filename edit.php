@@ -135,12 +135,6 @@ else if(isset($_GET['id'])){
             echo '<p></p><a class="btn btn-outline-success" href="detail.php?id='.$_GET['id'].'">Zrušiť úpravy</a>';
             ?>
         </div>
-
-
-
-
-
-
         </div>
     </form>
 </body>
