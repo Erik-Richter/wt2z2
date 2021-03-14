@@ -81,3 +81,6 @@ table.sortable thead {
     cursor: default;
 }
 
+.warn{
+    color: #9e3e36;
+}

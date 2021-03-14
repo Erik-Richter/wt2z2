@@ -52,7 +52,7 @@ else if(isset($_GET['id'])){
     //var_dump($person);
 
 } else{
-    header('Location: '."../404.html");
+    //header('Location: '."../404.html");
 }
 
 
@@ -86,10 +86,10 @@ else if(isset($_GET['id'])){
                         <input name="id" type="hidden" value="<?php echo isset($person["id"]) ? $person["id"] : null; ?>">
 
                         <label class="col-5" for="name">Meno</label>
-                        <input class="col-6" id="name" name="name" type="text" value="<?php echo isset($person["name"]) ? $person["name"] : null; ?>">
+                        <input required class="col-6" id="name" name="name" type="text" value="<?php echo isset($person["name"]) ? $person["name"] : null; ?>">
 
                         <label class="col-5" for="surname">Priezvisko</label>
-                        <input class="col-6" id="surname" name="surname" type="text" value="<?php echo isset($person["surname"]) ? $person["surname"] : null; ?>">
+                        <input required class="col-6" id="surname" name="surname" type="text" value="<?php echo isset($person["surname"]) ? $person["surname"] : null; ?>">
                     </div>
                     <br>
                 </fieldset>

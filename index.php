@@ -12,11 +12,11 @@
 </head>
 
 <body>
-<h1><a id="pageHeader" href="index.php"> <img src="img/13765.png" alt="ikona_olympijskych_hier" height="51" width="51">lympijské hry</a></h1>
+<h1><a id="pageHeader" href="index.php"> <img src="img/13765.png" alt="O" height="51" width="51">lympijské hry</a></h1>
 
 <main>
     <div id="tabulka" class="table-wrapper-scroll-y my-custom-scrollbar">
-    <table class="table table-dark table-hover" id="tabulka">
+    <table class="table table-dark table-hover">
         <thead>
         <tr>
             <th>Meno</th>
@@ -44,7 +44,7 @@
 
     <div id="vkladanie">
         <p></p>
-        <a class="btn btn-primary" href="edit.php?">Vložiť nový záznam</a>
+        <a class="btn btn-primary" href="/shottiZ2/edit.php?">Vložiť nový záznam</a>
     </div>
 
 </main>
