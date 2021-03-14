@@ -75,32 +75,73 @@ else if(isset($_GET['id'])){
 <h1><a id="pageHeader" href="index.php"> <img src="img/13765.png" alt="ikona_olympijskych_hier" height="51" width="51">lympijské hry</a></h1>
     <form action="edit.php" method="post">
 
-        <input name="id" type="hidden" value="<?php echo isset($person["id"]) ? $person["id"] : null; ?>">
-        <label for="name">Meno</label>
-        <input id="name" name="name" type="text" value="<?php echo isset($person["name"]) ? $person["name"] : null; ?>"><br><br>
+        <div class="container">
+        <div class="row">
+            <h2>Detaily olympionika</h2>
+            <div class="col-lg-6">
+                <fieldset>
+                    <legend>Osobné údaje</legend>
 
-        <label for="surname">Priezvisko</label>
-        <input id="surname" name="surname" type="text" value="<?php echo isset($person["surname"]) ? $person["surname"] : null; ?>"><br><br>
+                    <div class="row">
+                        <input name="id" type="hidden" value="<?php echo isset($person["id"]) ? $person["id"] : null; ?>">
 
-        <label for="dob">Dátum narodenia</label>
-        <input id="dob" name="dob" type="text" value="<?php echo isset($person["birth_day"]) ? $person["birth_day"] : null; ?>"><br><br>
+                        <label class="col-5" for="name">Meno</label>
+                        <input class="col-6" id="name" name="name" type="text" value="<?php echo isset($person["name"]) ? $person["name"] : null; ?>">
 
-        <label for="pob">Rodné mesto</label>
-        <input id="pob" name="pob" type="text" value="<?php echo isset($person["birth_place"]) ? $person["birth_place"] : null; ?>"><br><br>
+                        <label class="col-5" for="surname">Priezvisko</label>
+                        <input class="col-6" id="surname" name="surname" type="text" value="<?php echo isset($person["surname"]) ? $person["surname"] : null; ?>">
+                    </div>
+                    <br>
+                </fieldset>
+            </div>
+            <div class="col-lg-6">
+                <fieldset>
+                <legend>Narodenie</legend>
+                <div class="row">
+                    <label class="col-5" for="dob">Dátum narodenia</label>
+                    <input class="col-6" id="dob" name="dob" type="text" value="<?php echo isset($person["birth_day"]) ? $person["birth_day"] : null; ?>">
 
-        <label for="bc">Štát</label>
-        <input id="bc" name="bc" type="text" value="<?php echo isset($person["birth_country"]) ? $person["birth_country"] : null; ?>"><br><br>
+                    <label class="col-5" for="pob">Rodné mesto</label>
+                    <input class="col-6" id="pob" name="pob" type="text" value="<?php echo isset($person["birth_place"]) ? $person["birth_place"] : null; ?>">
 
-        <label for="dod">Dátum úmrtia</label>
-        <input id="dod" name="dod" type="text" value="<?php echo isset($person["death_day"]) ? $person["death_day"] : null; ?>"><br><br>
+                    <label class="col-5" for="bc">Štát</label>
+                    <input class="col-6" id="bc" name="bc" type="text" value="<?php echo isset($person["birth_country"]) ? $person["birth_country"] : null; ?>">
+                </div>
+                    <br>
+                </fieldset>
+            </div>
+            <div class="col-lg-6"></div>
+            <div class="col-lg-6">
+                <fieldset>
+                <legend>Úmrtie</legend>
+                <div class="row">
+                    <label class="col-5" for="dod">Dátum úmrtia</label>
+                    <input class="col-6" id="dod" name="dod" type="text" value="<?php echo isset($person["death_day"]) ? $person["death_day"] : null; ?>">
 
-        <label for="pod">Mesto úmrtia</label>
-        <input id="pod" name="pod" type="text" value="<?php echo isset($person["death_place"]) ? $person["death_place"] : null; ?>"><br><br>
+                    <label class="col-5" for="pod">Mesto úmrtia</label>
+                    <input class="col-6" id="pod" name="pod" type="text" value="<?php echo isset($person["death_place"]) ? $person["death_place"] : null; ?>">
 
-        <label for="dc">Štát</label>
-        <input id="dc" name="dc" type="text" value="<?php echo isset($person["death_country"]) ? $person["death_country"] : null; ?>"><br><br>
+                    <label class="col-5" for="dc">Štát</label>
+                    <input class="col-6" id="dc" name="dc" type="text" value="<?php echo isset($person["death_country"]) ? $person["death_country"] : null; ?>">
+                </div>
+                    <br>
+                </fieldset>
+            </div>
+        </div>
+        <div class="row">
+            <p></p>
+            <input class="btn btn-outline-warning" type="submit" value="Uložiť">
+            <?php
+            echo '<p></p><a class="btn btn-outline-success" href="detail.php?id='.$_GET['id'].'">Zrušiť úpravy</a>';
+            ?>
+        </div>
 
-        <input type="submit" value="Uložiť">
+
+
+
+
+
+        </div>
     </form>
 </body>
 </html>

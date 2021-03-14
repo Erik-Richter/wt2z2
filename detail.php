@@ -17,7 +17,7 @@
     <div class="col-lg-6"></div>
     <div class="row">
         <?php
-        echo '<a class="btn btn-outline-warning" href="edit.php?id='.$_GET['id'].'">Upraviť</a>';
+        echo '<p></p><a class="btn btn-outline-warning" href="edit.php?id='.$_GET['id'].'">Upraviť</a>';
         ?>
         <p id="pid1"></p>
         <a class="btn btn-outline-success" href="index.php">Návrat na hlavnú stránku</a><br>
